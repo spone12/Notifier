@@ -1,0 +1,22 @@
+@OrderService_HostAddress = http://localhost:5082
+
+### 📌 Get a list of orders
+GET {{OrderService_HostAddress}}/api/orders
+Accept: application/json
+###
+
+### 📌 Create an order
+POST {{OrderService_HostAddress}}/api/orders
+Content-Type: application/json
+
+{
+  "id": 1,
+  "productName": "Laptop",
+  "price": 1200.50
+}
+###
+
+### 📌 Check the status of Kafka
+GET {{OrderService_HostAddress}}/api/kafka/status
+Accept: application/json
+###
