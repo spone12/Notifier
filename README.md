@@ -1,6 +1,19 @@
-Запуск микросервиса Order на kafka вместе с Dotnet \
++ **Packages:**
+    - Docker
+    - Kafka
+    - .Net 9
 
-`docker-compose up -d && \` \
+**Запуск микросервисов через docker:**
+  - docker-compose up --build
+
+**Логи:**
+ - docker-logs -f [CONTAINER]
+   - order-service
+   - notification-service
+
+*Старый вариант запуска*: 
+  Запуск микросервиса Order через брокер сообщений Kafka вместе с DotNet
+  - `docker-compose up -d && \` \
 `cd OrderService/ && dotnet run`
 
 Создание продукта:
