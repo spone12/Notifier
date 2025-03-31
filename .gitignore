@@ -28,7 +28,6 @@ logs/
 # Docker
 **/docker-compose.override.yml
 **/docker-compose.*.yml
-**/Dockerfile
 
 # Kafka logs and data
 kafka-data/
